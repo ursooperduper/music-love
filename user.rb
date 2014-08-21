@@ -3,6 +3,7 @@ class User
 
   # just some basic data for now, we'll worry about auth later
   property :id,                 Serial
+  property :name,               String
   property :username,           String
   property :email,              String
   property :itunes_lib,         Boolean,    :default => false
