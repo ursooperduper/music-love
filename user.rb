@@ -9,4 +9,7 @@ class User
   property :itunes_lib,         Boolean,    :default => false
   property :created_at,         DateTime,   :default => Time.now()
   property :updated_at,         DateTime,   :default => Time.now()
+
+  has n, :collections
+
 end

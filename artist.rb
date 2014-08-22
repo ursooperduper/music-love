@@ -19,6 +19,5 @@ class Artist
   property :updated_at,           DateTime, :default => Time.now()
 
   has n,   :albums
-  has n,   :tracks
   has n,   :genres
 end

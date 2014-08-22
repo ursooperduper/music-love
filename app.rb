@@ -26,7 +26,6 @@ end
 
 get '/setup' do
   @title = "music:love | user setup"
-
   haml :setup
 end
 
@@ -51,7 +50,7 @@ post "/setup" do
                           :created_at => Time.now,
                           :updated_at => Time.now }
   new_user.save
-
   puts new_user.saved?
+
   return "The file was successfully uploaded!"
 end

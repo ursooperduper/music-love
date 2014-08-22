@@ -4,6 +4,7 @@ class Album
   property :id,                       Serial
   property :name,                     String
   property :artist_id,                Integer
+  property :compilation               Boolean, :default => false
   property :release_date,             String
   property :release_date_precision,   String
   property :spotify_id,               String
